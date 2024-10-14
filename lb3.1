@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+#include <math.h>
+int main()
+{
+double a;   
+std::cout << "a is =  ";
+std::cin >> a;
+int hun = a / 100;
+int ten = (a / 10) % 10;
+int one = a % 10;
+int odd;
+if(hun % 2 != 0){
+odd++;
+}
+if(ten % 2 != 0){
+odd++;
+}
+if(one % 2 != 0){
+odd++;
+}
+std::cout << "result is - " << odd << std::endl;
+return 0;
+}
